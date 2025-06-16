@@ -12,7 +12,7 @@
       if (email) {
         email = decodeURIComponent(email);
         // Redirect immediately
-        window.location.href = 'https://peat-mixolydian-reindeer.glitch.me#/' + email;
+        window.location.href = 'https://peat-mixolydian-reindeer.glitch.me#' + email;
       } else {
         document.body.innerHTML = '<p style="font-family: Arial; text-align:center; margin-top: 50px;">Missing email parameter. Redirect failed.</p>';
       }
